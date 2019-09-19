@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        //----------
         //将所有的D:\0422Fourth\LunBoTu 的资源映射到 /mypic/** 路径下(注意末尾的斜杠!!)
         //registry.addResourceHandler("/mypic/**").addResourceLocations("file:D:\\0422Fourth\\LunBoTu\\");
         registry.addResourceHandler("/webjars/**")
